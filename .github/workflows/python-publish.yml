@@ -24,7 +24,7 @@ jobs:
         pip install build
     - name: Test with pytest
       run: |
-        pip install pytest
+        pip install pytest jsonschema>=4.0.0 coverage
         pytest
     - name: Build package
       run: python -m build
